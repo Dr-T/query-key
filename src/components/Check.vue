@@ -1186,13 +1186,13 @@ const tableData = ref([]);
 const totalModels = ref(0);
 const completedModels = ref(0);
 const progressPercent = ref(0);
-const chatSite = ref('https://chat.crond.dev');
+const chatSite = ref('https://nextchat.tx88.eu.org');
 const enableChat = ref(true);
 const showExperimentalFeatures = ref(false);
 const pagination = reactive({
   current: 1,
-  pageSize: 8, // 默认每页显示8条，可以根据需要调整
-  pageSizeOptions: ['8', '12', '20'], // 可供选择的每页条数
+  pageSize: 10, // 默认每页显示8条，可以根据需要调整
+  pageSizeOptions: ['10', '20', '50'], // 可供选择的每页条数
   showSizeChanger: true, // 显示每页条数切换器
   total: computed(() => tableData.value.length), // 数据总数
 });
